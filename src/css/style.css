@@ -60,6 +60,10 @@ Others
   flex-direction: column;
 }
 
+.image {
+  display: none;
+}
+
 *,
 ::after,
 ::before {
