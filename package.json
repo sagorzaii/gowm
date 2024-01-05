@@ -5,9 +5,13 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./src/scss/style.scss ./src/css/style.css"
+    "sass": "sass --watch ./src/scss/style.scss ./src/css/style.css",
+    "deploy": "gh-pages -d src"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
