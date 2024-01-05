@@ -6,7 +6,6 @@
 #btn_no_container {
   position: relative;
   width: 200px;
-  //   height: 100px;
 }
 #btn_yes {
   background-color: $vGreen;
@@ -16,6 +15,9 @@
   margin: auto;
 }
 .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 150px;
   padding: 8px 16px;
   color: $white;

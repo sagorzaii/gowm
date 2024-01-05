@@ -50,11 +50,36 @@ noBtnContainer.addEventListener("mouseover", () => {
     promptMsg.innerHTML =
       "wow a persistent person are u? still, wasting time...";
   }
+  if (counter === 31) {
+    noBtn.style.opacity = 80;
+    yesBtn.style.width = "200px";
+    yesBtn.style.height = "50px";
+  }
+  if (counter === 32) {
+    noBtn.style.opacity = 60;
+    yesBtn.style.width = "320px";
+    yesBtn.style.height = "160px";
+  }
+  if (counter === 33) {
+    noBtn.style.opacity = 40;
+    yesBtn.style.width = "440px";
+    yesBtn.style.height = "270px";
+  }
+  if (counter === 34) {
+    noBtn.style.opacity = 20;
+    yesBtn.style.width = "560px";
+    yesBtn.style.height = "380px";
+  }
+  if (counter === 35) {
+    noBtn.style.opacity = 0;
+    yesBtn.style.width = "680px";
+    yesBtn.style.height = "490px";
+  }
 });
 
 noBtn.addEventListener("click", () => {
+  defaultSong.play();
   counter += 1;
-  console.log(counter);
   switch (counter) {
     case 1:
       // are u sure?
@@ -125,11 +150,8 @@ yesBtn.addEventListener("click", () => {
   }
   noBtnContainer.style.display = "none";
   yesBtn.style.display = "none";
+  laughBean.style.display = "none";
   danceBean.style.display = "block";
-  happySong.play();
   defaultSong.pause();
-});
-
-document.body.addEventListener("mousemove", () => {
-  defaultSong.play();
+  happySong.play();
 });
