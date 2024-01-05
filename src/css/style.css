@@ -16,26 +16,48 @@ Others
   gap: 32px;
 }
 
+#btn_no_container {
+  position: relative;
+  width: 200px;
+}
+
 #btn_yes {
   background-color: #34d399;
 }
 
 #btn_no {
   background-color: #ef4444;
+  margin: auto;
 }
 
 .btn {
-  width: 200px;
-  height: auto;
+  width: 150px;
   padding: 8px 16px;
   color: #fff;
   border-radius: 0.3rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.251);
   cursor: pointer;
+  user-select: none;
 }
 
 #prompt_container {
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 16px;
+}
+
+#wrapper {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 *,
@@ -55,11 +77,8 @@ body {
   font-size: 16px;
   background-color: #f8fafc;
   line-height: 1.6;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  --x: calc(var(--posX, 0) * 1px);
-  --y: calc(var(--posY, 0) * 1px);
+  padding: 16px;
+  min-height: 100vh;
 }
 
 ul {
@@ -69,6 +88,14 @@ ul {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

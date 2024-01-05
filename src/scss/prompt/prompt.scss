@@ -1,5 +1,22 @@
 #prompt_container {
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //   height: 100px;
+  margin: 16px;
 }
 #prompt_msg {
+}
+#wrapper {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  //   background: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
 }
