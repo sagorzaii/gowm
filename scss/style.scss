@@ -1,0 +1,41 @@
+@import "./config/variables";
+@import "./button/button.scss";
+@import "./prompt/prompt.scss";
+@import "./img/image.scss";
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: $ff-secondary;
+  font-size: $bodySize;
+  background-color: $bgLightGrey;
+  // color: $white;
+  line-height: $lHeightOne;
+  padding: 16px;
+
+  // https://codepen.io/MarkBoots/pen/LYjvEJj
+  // width: 100%;
+  min-height: 100vh;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+h1 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+}

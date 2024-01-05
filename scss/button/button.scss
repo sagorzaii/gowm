@@ -1,0 +1,28 @@
+#btn_container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+#btn_no_container {
+  position: relative;
+  width: 200px;
+}
+#btn_yes {
+  background-color: $vGreen;
+}
+#btn_no {
+  background-color: $vRed;
+  margin: auto;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  padding: 8px 16px;
+  color: $white;
+  border-radius: $radius2;
+  box-shadow: $darkShadow;
+  cursor: pointer;
+  user-select: none;
+}
