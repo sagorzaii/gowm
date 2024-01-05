@@ -1,0 +1,68 @@
+/* ---------------
+Colors 
+---------------*/
+// text
+$white: #fff;
+$black: #000;
+$grey: #334155;
+// headings
+$vdarkBlue: hsl(208, 49%, 24%);
+// body copy
+$vDarkBody: #020617;
+$vLightBody: #94a3b8;
+$vGreen: #34d399;
+$vRed: #ef4444;
+// footer text
+$grayishBlue: hsl(240, 2%, 79%);
+// footer bg
+$vdarkBlackBlue: hsl(240, 10%, 16%);
+// intro / cta mobile nav bg gradient
+$bgLightGrey: #f8fafc;
+
+/* ---------------
+Fonts
+---------------*/
+// family 1
+$ff-primary: "Source Code Pro", monospace;
+// family 2
+$ff-secondary: "Source Code Pro", monospace;
+$ff-tertiary: "Source Code Pro", monospace;
+// font sizes
+$bodySize: 16px;
+// font weight
+$fw300: 300;
+$fw400: 400;
+$fw500: 500;
+$fw600: 600;
+$fw700: 700;
+
+/* ---------------
+Spacings
+---------------*/
+// line height
+$lHeightOne: 1.6;
+$lHeightTwo: 2;
+// margins
+$marginS: 1rem;
+$marginB: 3rem;
+// paddings
+$paddingS: 1rem;
+$paddingB: 2rem;
+
+//spacings
+$spacing1: 1rem;
+$spacing3: 3rem;
+$spacing6: 6rem;
+$spacing9: 9rem;
+
+/* ---------------
+Others
+---------------*/
+$radius: 6.25rem; //100px
+$radius2: 0.3rem;
+$maxWidth: 80rem; //~1281px
+$fixedWidth: 8.5rem; //120px
+$lightShadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.1); // ~ 0 5px 15px
+$darkShadow: 1px 1px 5px rgba(0, 0, 0, 0.251); // ~ 0 5px 15px
+$darkShadowTwo: 1px 1px 25px rgb(139, 139, 139); //5px 15px
+$transition: all 0.3s linear 3s;
