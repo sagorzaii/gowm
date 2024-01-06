@@ -1,5 +1,6 @@
 let counter = 0;
 const promptMsg = document.getElementById("prompt_msg");
+const bodyContainer = document.getElementById("bodyContainer");
 const yesBtn = document.getElementById("btn_yes");
 const noBtn = document.getElementById("btn_no");
 const noBtnContainer = document.getElementById("btn_no_container");
@@ -19,6 +20,7 @@ const flirtBean = document.getElementById("flirtBean");
 const sadBean2 = document.getElementById("sadBean2");
 const cryBean = document.getElementById("cryBean");
 const laughBean = document.getElementById("laughBean");
+const title = document.getElementById("title");
 
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + 1;
@@ -71,7 +73,7 @@ noBtnContainer.addEventListener("mouseover", () => {
     yesBtn.style.height = "380px";
   }
   if (counter === 35) {
-    noBtn.style.opacity = 0;
+    noBtn.style.display = "none";
     yesBtn.style.width = "680px";
     yesBtn.style.height = "490px";
   }
@@ -146,7 +148,7 @@ yesBtn.addEventListener("click", () => {
   if (counter === 6) {
     promptMsg.innerHTML = "HAHAHA u greedy girl! But yaayyyy! 🥳";
   } else {
-    promptMsg.innerHTML = "YAAAAYYYYYYYYYYYYYYYYYYYYY! 🥳";
+    promptMsg.innerHTML = "🥳🥳🥳🥳🥳🥳";
   }
   noBtnContainer.style.display = "none";
   yesBtn.style.display = "none";
@@ -154,4 +156,9 @@ yesBtn.addEventListener("click", () => {
   danceBean.style.display = "block";
   defaultSong.pause();
   happySong.play();
+  bodyContainer.classList.add("animated");
+  bodyContainer.classList.remove("default");
+  title.style.color = "white";
+  title.innerHTML = "YAAAAYYYYYYYYYYYYYYYYYYYYY!!!";
+  promptMsg.style.color = "white";
 });
