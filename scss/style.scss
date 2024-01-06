@@ -17,14 +17,28 @@ body {
   text-align: center;
   font-family: $ff-secondary;
   font-size: $bodySize;
-  background-color: $bgLightGrey;
-  // color: $white;
   line-height: $lHeightOne;
   padding: 16px;
-
-  // https://codepen.io/MarkBoots/pen/LYjvEJj
-  // width: 100%;
   min-height: 100vh;
+}
+.default {
+  background-color: $bgLightGrey;
+}
+.animated {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: mymove 5s infinite;
+  background-size: 400% 400%;
+}
+@keyframes mymove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 ul {
   list-style-type: none;
