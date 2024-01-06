@@ -1,7 +1,10 @@
 let counter = 0;
 const promptMsg = document.getElementById("prompt_msg");
+const promptContainer = document.getElementById("prompt_container");
+const bodyContainer = document.getElementById("bodyContainer");
 const yesBtn = document.getElementById("btn_yes");
 const noBtn = document.getElementById("btn_no");
+const btnContainer = document.getElementById("btn_container");
 const noBtnContainer = document.getElementById("btn_no_container");
 const noBtnRect = noBtnContainer.getBoundingClientRect();
 const wrapper = document.getElementById("wrapper");
@@ -19,6 +22,7 @@ const flirtBean = document.getElementById("flirtBean");
 const sadBean2 = document.getElementById("sadBean2");
 const cryBean = document.getElementById("cryBean");
 const laughBean = document.getElementById("laughBean");
+const title = document.getElementById("title");
 
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + 1;
@@ -33,6 +37,8 @@ const randomizePos = () => {
 noBtnContainer.addEventListener("mouseover", () => {
   if (counter >= 10) {
     randomizePos();
+    const randomRotate = Math.random() * 180;
+    noBtn.style.transform = `rotate(${randomRotate}deg)`;
     counter += 1;
   }
   if (counter === 15) {
@@ -71,9 +77,15 @@ noBtnContainer.addEventListener("mouseover", () => {
     yesBtn.style.height = "380px";
   }
   if (counter === 35) {
-    noBtn.style.opacity = 0;
-    yesBtn.style.width = "680px";
-    yesBtn.style.height = "490px";
+    noBtn.style.display = "none";
+    title.style.display = "none";
+    promptMsg.style.display = "none";
+    laughBean.style.display = "none";
+    btnContainer.style.display = "block";
+    // btnContainer.style.gap = "0";
+    promptContainer.style.margin = "0";
+    yesBtn.style.width = "100vw";
+    yesBtn.style.height = "100vh";
   }
 });
 
@@ -146,7 +158,8 @@ yesBtn.addEventListener("click", () => {
   if (counter === 6) {
     promptMsg.innerHTML = "HAHAHA u greedy girl! But yaayyyy! 🥳";
   } else {
-    promptMsg.innerHTML = "YAAAAYYYYYYYYYYYYYYYYYYYYY! 🥳";
+    promptMsg.style.display = "block";
+    promptMsg.innerHTML = "🥳🥳🥳🥳🥳🥳";
   }
   noBtnContainer.style.display = "none";
   yesBtn.style.display = "none";
@@ -154,4 +167,11 @@ yesBtn.addEventListener("click", () => {
   danceBean.style.display = "block";
   defaultSong.pause();
   happySong.play();
+  bodyContainer.classList.add("animated");
+  bodyContainer.classList.remove("default");
+  title.style.display = "block";
+  title.style.color = "white";
+  title.innerHTML = "YAAAAYYYYYYYYYYYYYYYYYYYYY!!!";
+  promptMsg.style.color = "white";
+  promptContainer.style.margin = "16px";
 });
